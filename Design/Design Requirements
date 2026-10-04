@@ -1,0 +1,256 @@
+# Design Requirements – Fixed M18 Proximity Sensor Bracket
+
+## 1. Project Overview
+
+The objective of this project is to design and manufacture a fixed-position mounting bracket for a standard M18 cylindrical proximity sensor.
+
+The bracket will be designed using CAD software and manufactured using FDM additive manufacturing.
+
+The project will demonstrate a complete engineering workflow from requirements definition through CAD design, additive manufacture, inspection, testing, and design review.
+
+---
+
+## 2. Design Objectives
+
+The bracket shall:
+
+- Securely hold a standard M18 cylindrical proximity sensor.
+- Maintain the sensor in a fixed position during normal use.
+- Allow the sensor to be installed and removed without damaging the bracket.
+- Be manufactured using FDM additive manufacturing.
+- Use commonly available metric fasteners.
+- Be simple to manufacture and assemble.
+- Minimise the requirement for support material during printing.
+- Be suitable for mounting to a machine frame, test rig, or aluminium extrusion.
+
+---
+
+## 3. Functional Requirements
+
+| ID | Requirement | Target |
+|---|---|---|
+| FR-01 | The bracket shall accommodate a standard M18 cylindrical proximity sensor. | 18 mm nominal sensor diameter |
+| FR-02 | The sensor shall remain securely positioned during normal operation. | No unintended movement |
+| FR-03 | The bracket shall maintain a fixed sensor position relative to its mounting surface. | Required |
+| FR-04 | The sensor shall be removable and replaceable. | Required |
+| FR-05 | Installation and removal shall be achievable using standard hand tools. | Required |
+| FR-06 | The bracket shall attach securely to an external structure. | M4 or M5 mounting hardware |
+| FR-07 | The bracket shall provide sufficient clearance for the sensor cable. | Required |
+
+---
+
+## 4. Mechanical Requirements
+
+| ID | Requirement | Target |
+|---|---|---|
+| MR-01 | Sensor mounting diameter | Suitable for M18 sensor |
+| MR-02 | Initial sensor bore diameter | Approximately 18.5 mm |
+| MR-03 | Minimum structural wall thickness | 3 mm |
+| MR-04 | Preferred structural wall thickness | 4–5 mm |
+| MR-05 | Base thickness | Approximately 4–6 mm |
+| MR-06 | Preferred mounting fasteners | M4 or M5 |
+| MR-07 | Number of printed components | Preferably 1 |
+| MR-08 | Permanent adhesives shall not be required. | Required |
+| MR-09 | Sharp external corners shall be minimised. | Fillets/chamfers where appropriate |
+
+---
+
+## 5. Sensor Mounting Requirements
+
+The bracket shall provide a dedicated mounting feature for a standard M18 proximity sensor.
+
+The sensor mounting feature shall:
+
+- Provide adequate clearance for installation.
+- Prevent excessive lateral movement.
+- Allow the sensor's own threaded body and retaining nuts to be used where practical.
+- Avoid loading or damaging the sensing face.
+- Provide sufficient clearance for tightening the sensor retaining nuts.
+- Allow the sensor cable to exit without excessive bending or interference.
+
+The initial CAD bore diameter shall be approximately:
+
+**18.5 mm**
+
+The final value may be revised following manufacturing and fit testing.
+
+---
+
+## 6. Mounting Requirements
+
+The bracket shall include features allowing it to be attached to an external structure.
+
+The mounting interface should use standard metric hardware.
+
+Preferred fasteners:
+
+- M4 or M5 bolts.
+
+Mounting holes may be either:
+
+- Clearance holes, or
+- Counterbored/countersunk holes where appropriate.
+
+The mounting arrangement shall prevent unwanted movement or rotation of the bracket once installed.
+
+---
+
+## 7. Additive Manufacturing Requirements
+
+The design shall be suitable for FDM additive manufacturing.
+
+### Manufacturing Process
+
+- Process: Fused Deposition Modelling
+- Preferred material: PETG
+- Prototype material: PLA permitted
+- Typical nozzle diameter: 0.4 mm
+
+### Design for Additive Manufacture
+
+The design should:
+
+- Minimise support material.
+- Avoid unnecessary overhangs.
+- Use practical wall thicknesses.
+- Include appropriate dimensional clearances.
+- Avoid unnecessarily complex geometry.
+- Include fillets or chamfers where beneficial.
+- Be oriented during printing to maximise strength in the expected loading direction.
+
+Print orientation shall consider FDM layer adhesion and the expected loads acting on the sensor bracket.
+
+---
+
+## 8. Dimensional Requirements
+
+Critical dimensions shall include:
+
+- Sensor bore diameter.
+- Sensor bore position.
+- Mounting hole diameter.
+- Mounting hole spacing.
+- Base thickness.
+- Bracket height.
+- Distance between the sensor centreline and mounting surface.
+
+Allowance shall be made for dimensional variation associated with FDM printing.
+
+Critical dimensions shall be verified after manufacture.
+
+---
+
+## 9. Assembly Requirements
+
+The finished bracket should preferably consist of:
+
+1. One printed bracket.
+2. One M18 proximity sensor.
+3. Standard metric mounting hardware.
+
+The assembly shall:
+
+- Be capable of being assembled using standard hand tools.
+- Allow the sensor to be removed and replaced.
+- Avoid requiring adhesive or permanent joining methods.
+- Provide adequate access to all required fasteners.
+
+---
+
+## 10. Safety and Usability Requirements
+
+The design shall:
+
+- Avoid sharp external edges where practical.
+- Avoid features likely to snag cables.
+- Provide sufficient cable clearance.
+- Prevent fasteners from contacting the sensing face.
+- Avoid excessive clamping force on the sensor body.
+- Provide sufficient clearance around the sensor for installation and maintenance.
+
+---
+
+## 11. Testing Requirements
+
+The manufactured prototype shall undergo dimensional and functional testing.
+
+### Dimensional Inspection
+
+Selected dimensions shall be measured using digital calipers.
+
+At minimum:
+
+| Feature | CAD Dimension | Measured Dimension |
+|---|---:|---:|
+| Sensor bore | TBD | TBD |
+| Mounting hole diameter | TBD | TBD |
+| Mounting hole spacing | TBD | TBD |
+| Bracket width | TBD | TBD |
+| Sensor centre height | TBD | TBD |
+
+### Functional Testing
+
+The prototype shall be checked for:
+
+- Sensor fit.
+- Sensor retention.
+- Mounting fastener fit.
+- Bracket rigidity.
+- Cable clearance.
+- Ease of sensor installation and removal.
+- Ability to maintain the sensor in its intended fixed position.
+
+---
+
+## 12. Design Review and Revision
+
+A design review shall be completed after manufacture and testing.
+
+Any issues identified shall be documented.
+
+Potential revisions may include:
+
+- Sensor bore tolerance adjustment.
+- Increased wall thickness.
+- Increased fillet radius.
+- Modified mounting hole dimensions.
+- Improved cable clearance.
+- Improved print orientation.
+- Reduced material usage.
+
+A revised component should be produced if significant improvements are identified.
+
+---
+
+## 13. Project Deliverables
+
+The completed project should include:
+
+- Design requirements document.
+- Initial concept sketch.
+- Final CAD model.
+- Engineering drawing.
+- STL or 3MF manufacturing file.
+- Slicer setup or screenshot.
+- Manufactured prototype.
+- Dimensional inspection results.
+- Functional testing results.
+- Design review documentation.
+- Photographs of the final bracket.
+
+---
+
+## 14. Success Criteria
+
+The project shall be considered successful when:
+
+1. The M18 proximity sensor can be installed correctly.
+2. The sensor remains securely fixed during use.
+3. The bracket can be mounted securely to an external structure.
+4. The design can be manufactured successfully using FDM printing.
+5. The assembly uses standard metric hardware.
+6. The sensor can be removed and replaced without damaging the bracket.
+7. Critical dimensions have been inspected after manufacture.
+8. Functional testing confirms acceptable rigidity and fit.
+9. Any significant issues have been documented during design review.
+10. A final manufacturing-ready design has been released.
